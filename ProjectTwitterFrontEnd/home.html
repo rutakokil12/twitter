@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      Welcome {{userName}} 
+    </div>
+    <div class="col-md-6">
+      <a ui-sref="login">Log out</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <form>
+        <div class="form-group">
+        <label for="message">Post message:</label>
+        <textarea class="form-control" rows="5" id="message"ng-model="message"></textarea>
+        </div>
+        <input type="submit" ng-model ="data" class="form-control btn btn-info" value="Post" ng-click="postMessage()">
+      </form>
+      <p>Output Message : {{messagePosted}}</p>
+      <p>StatusCode: {{status}}</p>
+      <p>Status: {{statustext}}</p>
+      <p>Response Headers: {{headers}}</p>
+    </div>
+    </div>
+      
+    </div>
